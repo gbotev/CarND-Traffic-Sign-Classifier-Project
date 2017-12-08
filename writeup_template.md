@@ -18,13 +18,12 @@ TODO
 [//]: # (Image References)
 
 [image1]: ./examples/visualisation.png "Visualization"
-[image2]: ./examples/grayscale.jpg "Grayscaling"
-[image3]: ./examples/random_noise.jpg "Random Noise"
-[image4]: ./examples/placeholder.png "Traffic Sign 1"
-[image5]: ./examples/placeholder.png "Traffic Sign 2"
-[image6]: ./examples/placeholder.png "Traffic Sign 3"
-[image7]: ./examples/placeholder.png "Traffic Sign 4"
-[image8]: ./examples/placeholder.png "Traffic Sign 5"
+[image2]: ./examples/sign_4.jpg "Limit 70"
+[image3]: ./examples/sign_14.jpg "Stop"
+[image4]: ./examples/sign_17.jpg "No entry"
+[image5]: ./examples/sign_34.jpg "Turn left ahead"
+[image6]: ./examples/sign_36.jpg "Continue straight or right"
+
 
 ## Rubric Points
 ### Here I will consider the [rubric points](https://review.udacity.com/#!/rubrics/481/view) individually and describe how I addressed each point in my implementation.  
@@ -53,19 +52,13 @@ which matches the numbers given in the original [data](http://benchmark.ini.rub.
 
 Here is an exploratory visualization of the data set. It is a bar chart showing how the data is distributed according to the different labels. As expected train, test and validation data have a common distribution, which means the samples have really been drawn at random. The dataset is not well balanced, as some categories (e.g. 1, 2 - speed limits) have around six times more occurencies than other classes (e.g. 21, 22 - double curve and bumpy road). This might be preferable as the frequency in the dataset resemblance the real life frequencies of these signs on the german roads (double curve and bumpy road are seen less frequently than speed limits).
 
-![alt text][image1]TODO
+![alt text][image1]
 
 ### Design and Test a Model Architecture
 
 #### 1. Data preprocessing (OPTIONAL: As described in the "Stand Out Suggestions" part of the rubric, if you generated additional data for training, describe why you decided to generate additional data, how you generated the data, and provide example images of the additional data. Then describe the characteristics of the augmented training set like number of images in the set, number of images for each class, etc.)
 
-
-![alt text][image2]
 Only preprocessing was simple data normalization based on substracting 128 and then dividing every pixel by 128.
-
-![alt text][image3]
-
-The difference between the original data set and the augmented data set is the following ... 
 
 
 #### 2. Describe what your final model architecture looks like including model type, layers, layer sizes, connectivity, etc.) Consider including a diagram and/or table describing the final model.
@@ -124,8 +117,8 @@ The train set accuracy is very high, meaning for the last 6-7 steps we were over
 
 Here are five German traffic signs that I found on the web:
 
-![alt text][image4] ![alt text][image5] ![alt text][image6] 
-![alt text][image7] ![alt text][image8]
+![alt text][image2] ![alt text][image3] ![alt text][image4] 
+![alt text][image5] ![alt text][image6]
 
 The first image might be difficult to classify because ...
 
