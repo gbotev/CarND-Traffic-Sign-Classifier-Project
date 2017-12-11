@@ -163,3 +163,9 @@ Here we would examine the first convolution layer activations as it is the easie
 ![alt text][image10]
 ![alt text][image11]
 ![alt text][image12]
+
+As expected the first conv layer has learned some basic features. For example:
+Featuremap 0 detects diagonals sloping to the right (useful for arrows and numbers.
+Featuremap 1 and featuremap 2 detect vertical and horizontal lines.
+Featuremap 8 has learned to detect red color while featuremap 11 is detecting blue.
+Some of the featuremaps have similar activations (e.g. featuremaps 3 and 7, 4 and 10) which means as a further step we can try a lower number of features or some kind of regularization for the first convolution layer.
