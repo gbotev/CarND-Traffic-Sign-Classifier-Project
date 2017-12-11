@@ -23,7 +23,11 @@ The goals / steps of this project are the following:
 [image5]: ./examples/sign_34.jpg "Turn left ahead"
 [image6]: ./examples/sign_36.jpg "Continue straight or right"
 [image7]: ./examples/sign_confidence.png "Model predictions'confidence"
-
+[image8]: ./examples/sign_4_activations.png "Sign 4 activations"
+[image9]: ./examples/sign_14_activations.png "Sign 14 activations"
+[image10]: ./examples/sign_17_activations.png "Sign 17 activations"
+[image11]: ./examples/sign_34_activations.png "Sign 34 activations"
+[image12]: ./examples/sign_36_activations.png "Sign 36 activations"
 
 ## Rubric Points
 ### Here I will consider the [rubric points](https://review.udacity.com/#!/rubrics/481/view) individually and describe how I addressed each point in my implementation.  
@@ -153,4 +157,9 @@ Below is a graph of the confidence that the model assigns to each type of sign w
 ### (Optional) Visualizing the Neural Network (See Step 4 of the Ipython notebook for more details)
 #### 1. Discuss the visual output of your trained network's feature maps. What characteristics did the neural network use to make classifications?
 
-
+Here we would examine the first convolution layer activations as it is the easiest to interpret. Below are the activations for the five new signs.
+![alt text][image8]
+![alt text][image9]
+![alt text][image10]
+![alt text][image11]
+![alt text][image12]
